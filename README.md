@@ -1,2 +1,2 @@
 # ng-go
-angular 2
+it's an angular 2 repository
