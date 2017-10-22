@@ -1,2 +1,2 @@
 # angular-go
-it's an angular 2 repository
+it's an angular 4 repository
