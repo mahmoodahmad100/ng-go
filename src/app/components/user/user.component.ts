@@ -11,19 +11,20 @@ export class UserComponent implements OnInit {
   name:string;
   id:number;
   address :addressInfo;
+  things:any[];
 
   constructor() {
   	this.title = "Hello world";
   	this.address = {
   		city:"cairo",
   		phone:546546
-  	}
-  	console.log('hello cons');
-  	console.log(this.address);
+  	};
+
+
   }
 
   ngOnInit() {
-  	console.log('user ngOnInit');
+    this.things = [101010,"hello", "perfect"];
   }
 
 
