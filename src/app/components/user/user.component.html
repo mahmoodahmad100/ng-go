@@ -6,6 +6,7 @@
 
 
 <button (click)="changeCity()">click here</button>
+<button (click)="addToThings()">add</button>
 <h2>things</h2>
 <ul *ngFor="let thing of things; let i = index">
 	<li>{{i + 1}} - {{thing}}</li>
