@@ -32,6 +32,11 @@ export class UserComponent implements OnInit {
     this.address.city = 'Alex';
   }
 
+  addToThings()
+  {
+    this.things.push('yes');
+  }
+
 
 }
   interface addressInfo
