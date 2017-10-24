@@ -37,6 +37,11 @@ export class UserComponent implements OnInit {
     this.things.push('yes');
   }
 
+  AddThing(param)
+  {
+    this.things.unshift(param);
+  }
+
 
 }
   interface addressInfo
