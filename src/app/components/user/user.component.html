@@ -15,6 +15,6 @@
 </form>
 
 <ul *ngFor="let thing of things; let i = index">
-	<li>{{i + 1}} - {{thing}}</li>
+	<li>{{i + 1}} - {{thing}} <button (click)="delete(thing)">X</button></li>
 </ul>
 
