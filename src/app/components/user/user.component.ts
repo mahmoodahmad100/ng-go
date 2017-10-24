@@ -25,6 +25,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.things = [101010,"hello", "perfect"];
+    this.name = "myName";
   }
 
   changeCity()

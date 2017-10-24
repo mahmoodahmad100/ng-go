@@ -1,5 +1,7 @@
 <h2>{{title}}</h2>
 
+<h3>{{name}}</h3>
+
 <ul>
 	<li>{{address.city}} - {{address.phone}}</li>
 </ul>
@@ -9,12 +11,22 @@
 <button (click)="addToThings()">add</button>
 <h2>things</h2>
 
+<form>
+	<input type="text" [(ngModel)]="name" name="name" placeholder="name"><br>	
+	<input type="text" [(ngModel)]="address.city" name="city" placeholder="city"><br>	
+	<input type="text" [(ngModel)]="address.phone" name="phone" placeholder="phone"><br>
+	<button>send</button>	
+</form>
+
+<hr>
+
+
 <form action="#" (submit)="AddThing(thing.value)">
 	<input type="text" #thing>
 	<button type="submit">add a thing to the list</button>
 </form>
 
-<ul *ngFor="let thing of things; let i = index">
+<ul  *ngFor="let thing of things; let i = index">
 	<li>{{i + 1}} - {{thing}} <button (click)="delete(thing)">X</button></li>
 </ul>
 
