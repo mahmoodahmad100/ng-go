@@ -42,6 +42,15 @@ export class UserComponent implements OnInit {
     this.things.unshift(param);
   }
 
+  delete(param)
+  {
+    for(let i = 0; i < this.things.length; i++)
+    {
+      if(this.things[i] == param)
+        this.things.splice(i,1);
+    }
+  }
+
 
 }
   interface addressInfo
