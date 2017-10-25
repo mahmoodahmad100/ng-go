@@ -21,6 +21,9 @@ export class UserComponent implements OnInit {
   		phone:546546
   	};
 
+    this.dataService.getPosts().subscribe( posts =>{
+        console.log(posts);
+    });
 
   }
 
