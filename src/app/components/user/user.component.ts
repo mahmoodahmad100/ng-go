@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-user',
@@ -13,7 +14,7 @@ export class UserComponent implements OnInit {
   address :addressInfo;
   things:any[];
 
-  constructor() {
+  constructor(private dataService:DataService) {
   	this.title = "Hello world";
   	this.address = {
   		city:"cairo",
