@@ -13,7 +13,7 @@ export class UserComponent implements OnInit {
   id:number;
   address :addressInfo;
   things:any[];
-  posts:any[];
+  posts:post[];
 
   constructor(private dataService:DataService) {
   	this.title = "Hello world";
@@ -61,6 +61,14 @@ export class UserComponent implements OnInit {
 }
   interface addressInfo
   {
-	city:string,
-	phone:number
+	  city:string,
+	  phone:number
+  }
+
+  interface post
+  {
+    id:number,
+    userId:number,
+    title:string,
+    body:string
   }
