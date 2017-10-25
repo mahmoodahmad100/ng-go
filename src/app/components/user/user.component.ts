@@ -13,6 +13,7 @@ export class UserComponent implements OnInit {
   id:number;
   address :addressInfo;
   things:any[];
+  posts:any[];
 
   constructor(private dataService:DataService) {
   	this.title = "Hello world";
@@ -21,8 +22,8 @@ export class UserComponent implements OnInit {
   		phone:546546
   	};
 
-    this.dataService.getPosts().subscribe( posts =>{
-        console.log(posts);
+    this.dataService.getPosts().subscribe( posts => {
+        this.posts = posts;
     });
 
   }
