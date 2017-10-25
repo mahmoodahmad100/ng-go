@@ -30,3 +30,15 @@
 	<li>{{i + 1}} - {{thing}} <button (click)="delete(thing)">X</button></li>
 </ul>
 
+
+<hr>
+
+<div *ngFor="let post of posts">
+	<h2>{{post.title}}</h2>
+	<h2>{{post.id}}</h2>
+	<h2>{{post.userId}}</h2>
+	<h2>{{post.title}}</h2>
+	<p>{{post.body}}</p>	
+</div>
+
+
