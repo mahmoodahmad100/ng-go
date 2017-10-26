@@ -14,6 +14,7 @@ export class UserComponent implements OnInit {
   address :addressInfo;
   things:any[];
   posts:post[];
+  hideForm:boolean = false;
 
   constructor(private dataService:DataService) {
   	this.title = "Hello world";
@@ -46,6 +47,11 @@ export class UserComponent implements OnInit {
   AddThing(param)
   {
     this.things.unshift(param);
+  }
+
+  toggleEdit()
+  {
+    this.hideForm = !this.hideForm;
   }
 
   delete(param)
