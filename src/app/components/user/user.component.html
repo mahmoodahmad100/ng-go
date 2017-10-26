@@ -9,14 +9,17 @@
 
 <button (click)="changeCity()">click here</button>
 <button (click)="addToThings()">add</button>
+<button (click)="toggleEdit()">toggle edit</button>
 <h2>things</h2>
 
-<form>
-	<input type="text" [(ngModel)]="name" name="name" placeholder="name"><br>	
-	<input type="text" [(ngModel)]="address.city" name="city" placeholder="city"><br>	
-	<input type="text" [(ngModel)]="address.phone" name="phone" placeholder="phone"><br>
-	<button>send</button>	
-</form>
+<div *ngIf="hideForm">
+	<form>
+		<input type="text" [(ngModel)]="name" name="name" placeholder="name"><br>	
+		<input type="text" [(ngModel)]="address.city" name="city" placeholder="city"><br>	
+		<input type="text" [(ngModel)]="address.phone" name="phone" placeholder="phone"><br>
+		<button>send</button>	
+	</form>
+</div>
 
 <hr>
 
