@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 				<br>
 				<input class="form-control" [(ngModel)]="stringInput">
 				{{ stringInput | titleCase }}
-	          `
+	          `,
+	inputs: ['isLiked']
 })
 
 export class TestComponent
