@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { TestComponent } from './test.component';
 
 import { CutPipe } from './cut.pipe';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 const APPROUTES:Routes = [
@@ -26,7 +27,8 @@ const APPROUTES:Routes = [
     UserComponent,
     AboutComponent,
     TestComponent,
-    CutPipe
+    CutPipe,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
